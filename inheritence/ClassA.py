@@ -1,0 +1,6 @@
+class ClassA:
+    def method1(self):
+        print('I am method 1')
+
+    def method2(self):
+        print('I am method 2')
