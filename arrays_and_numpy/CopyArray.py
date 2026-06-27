@@ -1,4 +1,4 @@
-from numpy import*
+from numpyPractice import*
 # Suppose you have one array. Now you want to copy that array and create another array out of it
 
 arr1=array([1,2,3,4,5,6])

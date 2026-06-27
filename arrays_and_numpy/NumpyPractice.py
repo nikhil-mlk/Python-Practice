@@ -1,4 +1,4 @@
-from numpy import *
+from numpyPractice import *
 
 # Adding 5 to each element in array
 arr=array([1,2,3,4,5])

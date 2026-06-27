@@ -34,6 +34,11 @@ list6=[1,2,3,4,5,6,7,8]
 del list6[2]  # value at index 2 will be deleted
 print(list6) # [1, 2, 4, 5, 6, 7, 8]
 
+# --- del also remove the list from the memory. It is different from clear.
+# In clear, list is still present but empty BUT in del there will be no list
+ls=[1,2,3,4,5]
+del ls
+
 # --- Remove value from list ---- remove LAST value in list ---> pop()
 list7=[1,2,3,4,5,6,7,8]
 list7.pop()
@@ -66,7 +71,34 @@ print(min(list12)) # 1
 list13=[4,6,1,7,2]
 print(list13.sort())
 
+'''
+ ---- Copy the lists ---
+ There are 2 methods:
+ 
+ Method1:
+ Suppose we have ls_2=ls_1
+ In this case ls_2 is a reference of ls_1. The problem is if we make any change in ls_1, the same
+ change will reflect in ls_2
+ 
+ Suppose we dont want this then opt method 2
+ 
+ Method 2: Use copy() method 
+ In this method once we copy the existing list to other. After that even if we make any changes
+ in the first list, it will not impact other
+ '''
+# Copy lists
+ls_1=['a','b','c','d','e']
+ls_2=ls_1
 
+ls_1.append('k')
+print(ls_2)
+
+# Use of copy method
+fruits=['apple','banana','pear']
+fruits_1=fruits.copy()
+
+fruits.append('mango')
+print(fruits_1)
 
 
 

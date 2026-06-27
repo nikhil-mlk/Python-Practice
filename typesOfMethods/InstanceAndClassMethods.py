@@ -13,6 +13,10 @@ class Student:
     def schoolName(cls):
         return cls.school
 
+    @staticmethod
+    def classInformation():
+        print('This class has methods that calculate average of marks')
+
 s1=Student(23,33,43)
 s2=Student(77,88,99)
 
@@ -23,6 +27,9 @@ print(s1.school)
 print(s2.school)
 
 print(Student.schoolName())
+
+Student.classInformation()
+
 
 
 
